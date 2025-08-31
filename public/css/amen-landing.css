@@ -1,0 +1,312 @@
+/* Additional Animations for Amen Landing Page */
+
+/* Enhanced floating animation */
+.floating-enhanced {
+    animation: floatingEnhanced 4s ease-in-out infinite;
+}
+
+@keyframes floatingEnhanced {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+        opacity: 0.8;
+    }
+    25% { 
+        transform: translateY(-15px) rotate(2deg); 
+        opacity: 1;
+    }
+    50% { 
+        transform: translateY(-25px) rotate(0deg); 
+        opacity: 0.9;
+    }
+    75% { 
+        transform: translateY(-15px) rotate(-2deg); 
+        opacity: 1;
+    }
+}
+
+/* Pulse animation for buttons */
+.pulse-button {
+    animation: pulseButton 2s ease-in-out infinite;
+}
+
+@keyframes pulseButton {
+    0%, 100% { 
+        transform: scale(1); 
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+    }
+    50% { 
+        transform: scale(1.05); 
+        box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+    }
+}
+
+/* Gradient text animation */
+.gradient-text {
+    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #667eea);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hand scan enhanced animation */
+.hand-scan-enhanced {
+    animation: handScanEnhanced 5s ease-in-out infinite;
+}
+
+@keyframes handScanEnhanced {
+    0% { 
+        transform: scale(1) rotate(0deg); 
+        filter: brightness(1);
+    }
+    20% { 
+        transform: scale(1.05) rotate(2deg); 
+        filter: brightness(1.1);
+    }
+    40% { 
+        transform: scale(1.1) rotate(0deg); 
+        filter: brightness(1.2);
+    }
+    60% { 
+        transform: scale(1.05) rotate(-2deg); 
+        filter: brightness(1.1);
+    }
+    80% { 
+        transform: scale(1.02) rotate(1deg); 
+        filter: brightness(1.05);
+    }
+    100% { 
+        transform: scale(1) rotate(0deg); 
+        filter: brightness(1);
+    }
+}
+
+/* QR code enhanced animation */
+.qr-code-enhanced {
+    animation: qrCodeEnhanced 4s ease-in-out infinite;
+}
+
+@keyframes qrCodeEnhanced {
+    0%, 100% { 
+        transform: scale(1) rotate(0deg); 
+        opacity: 1;
+        filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.5));
+    }
+    25% { 
+        transform: scale(1.1) rotate(90deg); 
+        opacity: 0.9;
+        filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.8));
+    }
+    50% { 
+        transform: scale(1.2) rotate(180deg); 
+        opacity: 0.8;
+        filter: drop-shadow(0 0 15px rgba(34, 197, 94, 1));
+    }
+    75% { 
+        transform: scale(1.1) rotate(270deg); 
+        opacity: 0.9;
+        filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.8));
+    }
+}
+
+/* Feature card hover effects */
+.feature-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.feature-card:hover::before {
+    left: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Step number glow effect */
+.step-number {
+    position: relative;
+    overflow: hidden;
+}
+
+.step-number::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    animation: stepGlow 2s ease-in-out infinite;
+}
+
+@keyframes stepGlow {
+    0%, 100% { 
+        transform: scale(1); 
+        opacity: 0.3;
+    }
+    50% { 
+        transform: scale(1.2); 
+        opacity: 0.6;
+    }
+}
+
+/* Mobile app preview enhanced */
+.mobile-preview-enhanced {
+    animation: mobilePreview 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes mobilePreview {
+    0%, 100% { 
+        transform: perspective(1000px) rotateY(0deg) rotateX(0deg); 
+    }
+    25% { 
+        transform: perspective(1000px) rotateY(5deg) rotateX(2deg); 
+    }
+    50% { 
+        transform: perspective(1000px) rotateY(0deg) rotateX(5deg); 
+    }
+    75% { 
+        transform: perspective(1000px) rotateY(-5deg) rotateX(2deg); 
+    }
+}
+
+/* Download button hover effects */
+.download-button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.download-button:hover::before {
+    left: 100%;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input focus effects */
+.form-input-enhanced:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Navigation glass effect enhanced */
+.nav-glass-enhanced {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll indicator enhanced */
+.scroll-indicator-enhanced {
+    animation: scrollIndicator 2s ease-in-out infinite;
+}
+
+@keyframes scrollIndicator {
+    0%, 100% { 
+        transform: translateY(0) scale(1); 
+        opacity: 0.7;
+    }
+    50% { 
+        transform: translateY(-10px) scale(1.1); 
+        opacity: 1;
+    }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+    .floating-enhanced {
+        animation-duration: 6s;
+    }
+    
+    .hand-scan-enhanced {
+        animation-duration: 7s;
+    }
+    
+    .mobile-preview-enhanced {
+        animation-duration: 8s;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .glass-effect {
+        background: rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .feature-card {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Loading animation for form submission */
+.form-loading {
+    animation: formLoading 1.5s ease-in-out infinite;
+}
+
+@keyframes formLoading {
+    0%, 100% { 
+        opacity: 1; 
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.8; 
+        transform: scale(0.98);
+    }
+}
+
+/* Success animation for form submission */
+.form-success {
+    animation: formSuccess 0.6s ease-out;
+}
+
+@keyframes formSuccess {
+    0% { 
+        transform: scale(0.8); 
+        opacity: 0;
+    }
+    50% { 
+        transform: scale(1.1);
+    }
+    100% { 
+        transform: scale(1); 
+        opacity: 1;
+    }
+}

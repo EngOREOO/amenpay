@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "userManagement": "User Management",
+    "transactions": "Transactions",
+    "analytics": "Analytics",
+    "paymentGateways": "Payment Gateways",
+    "kyc": "KYC Verification",
+    "fraud": "Fraud Detection",
+    "regulatory": "Regulatory Reports",
+    "systemSettings": "System Settings",
+    "security": "Security",
+    "auditLogs": "Audit Logs",
+    "aiAnalytics": "AI Analytics"
+  },
+  "kpi": {
+    "totalUsers": "Total Users",
+    "totalTransactions": "Total Transactions",
+    "totalRevenue": "Total Revenue",
+    "activeUsers": "Active Users",
+    "increase": "increase"
+  },
+  "charts": {
+    "revenueOverview": "Revenue Overview",
+    "userGrowth": "User Growth",
+    "newUsers": "New Users",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "periods": {
+      "7d": "7D",
+      "30d": "30D",
+      "90d": "90D"
+    }
+  },
+  "actions": {
+    "addNewUser": "Add New User",
+    "createTransaction": "Create Transaction",
+    "reviewKYC": "Review KYC",
+    "viewAll": "View All"
+  },
+  "tables": {
+    "recentTransactions": "Recent Transactions",
+    "empty": "No recent transactions",
+    "headers": {
+      "user": "User",
+      "amount": "Amount",
+      "status": "Status",
+      "date": "Date"
+    }
+  },
+  "common": {
+    "search": "Search...",
+    "language": "Language",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "notifications": "Notifications",
+    "welcome": "Welcome back, Admin!",
+    "subtitle": "Here's what's happening with your Amen Pay platform today.",
+    "quickActions": "Quick Actions"
+  },
+  "currency": {
+    "sar": "SAR"
+  },
+  "status": {
+    "pending": "Pending",
+    "completed": "Completed",
+    "failed": "Failed",
+    "processing": "Processing"
+  }
+}
